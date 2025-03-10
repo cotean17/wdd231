@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: yellow;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.certificate {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.filters {
+    margin-bottom: 10px;
+}
+
+.filters button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: gray;
+}
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.course-box {
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    min-width: 100px;
+    text-align: center;
+}
+
+.completed {
+    background: lightgreen;
+}
+
+.not-completed {
+    background: brown;
+    color: white;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}

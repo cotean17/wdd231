@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    #courses {
+        display: flex;
+        justify-content: center;
+    }
+}
