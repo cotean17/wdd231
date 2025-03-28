@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Directory - A listing of local businesses supporting economic growth.">
+    <meta name="author" content="Maria Jose Arevalo N.">
+    
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://unsplash.com/photos/a-couple-of-women-sitting-on-a-couch-FHhbHW4vFxc">
+    <meta property="og:url" content="https://cotean17.github.io/wdd231/chamber/directory.html">
+
+    <title>Syracuse Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Syracuse Chamber of Commerce. Discover events, support local businesses, and join the community.">
+
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <title>Syracuse Chamber of Commerce | Home</title>
+        <meta name="description" content="Welcome to the Syracuse Chamber of Commerce. Discover events, support local businesses, and join the community.">
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <ul id="nav-menu" class="hidden">
+                
+                <li><a href="https://cotean17.github.io/wdd231/index.html">Home</a></li>
+                <li><a href="https://cotean17.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="https://cotean17.github.io/wdd231/chamber/join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+            <!-- Hero Image -->
+            <section class="hero">
+              <img src="images/syracuse-ut.jpg" alt="Syracuse Chamber - Local Business Community">
+              <div class="hero-text">
+                <h2>Welcome to the Syracuse Chamber of Commerce</h2>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+              </div>
+            </section>
+          
+            <!-- Current Events Section -->
+            <section class="events">
+              <h2>Upcoming Events</h2>
+              <ul>
+                <li><strong>April 5:</strong> Spring Networking Luncheon</li>
+                <li><strong>April 12:</strong> Small Business Workshop</li>
+              </ul>
+            </section>
+          
+            <!-- Weather Section -->
+            <section class="weather">
+              <h2>Current Weather</h2>
+              <div id="weather">
+                <p>Loading weather...</p>
+              </div>
+            </section>
+          
+            <!-- Spotlight Section -->
+            <section class="spotlights">
+              <h2>Member Spotlights</h2>
+              <div id="spotlight-container"></div>
+            </section>
+          </main>
+          
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Maria Jose Arevalo N. | WDD 231</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/spotlight.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
