@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syracuse Chamber of Commerce Directory - A listing of local businesses supporting economic growth.">
+    <meta name="author" content="Maria Jose Arevalo N.">
+    
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content=" Syracuse Chamber of Commerce | Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://unsplash.com/photos/a-couple-of-women-sitting-on-a-couch-FHhbHW4vFxc">
+    <meta property="og:url" content="https://cotean17.github.io/wdd231/chamber/chamber.html">
+
+    <title>Syracuse Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Syracuse Chamber of Commerce. Discover events, support local businesses, and join the community.">
+
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <title>Syracuse Chamber of Commerce | Directory</title>
+        <meta name="description" content="Welcome to the Syracuse Chamber of Commerce. Discover events, support local businesses, and join the community.">
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <ul id="nav-menu" class="hidden">
+                
+                <li><a href="https://cotean17.github.io/wdd231/chamber/chamber.html">Home</a></li>
+                <li><a href="https://cotean17.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                <li><a href="https://cotean17.github.io/wdd231/chamber/directory.html" class="active">Directory</a></li>
+                <li><a href="https://cotean17.github.io/wdd231/chamber/join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="join-form">
+          <h2>Membership Application</h2>
+          <form method="get" action="thankyou.html">
+            <label>First Name:
+              <input type="text" name="fname" title="First Name" autocomplete="given-name" required>
+            </label>
+    
+            <label>Last Name:
+              <input type="text" name="lname" title="Last Name" autocomplete="family-name" required>
+            </label>
+    
+            <label>Title/Role:
+              <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+            </label>
+    
+            <label>Email:
+              <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com" required>
+            </label>
+    
+            <label>Phone:
+              <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+            </label>
+    
+            <label>Business/Organization Name:
+              <input type="text" name="orgname" title="Organization Name" autocomplete="organization" required>
+            </label>
+    
+            <label>Membership Level:
+              <select name="membership" title="Membership Level">
+                <option value="np">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </label>
+    
+            <label>Business Description:
+              <textarea name="description" title="Business Description"></textarea>
+            </label>
+    
+            <input type="hidden" id="timestamp" name="timestamp">
+    
+            <input type="submit" value="Submit Application">
+          </form>
+        </section>
+    
+        <section class="membership-cards">
+          <h2>Membership Levels</h2>
+          <div class="card" id="np-card">
+            <h3>NP Membership</h3>
+            <a href="#np-modal">View Benefits</a>
+          </div>
+          <div class="card" id="bronze-card">
+            <h3>Bronze Membership</h3>
+            <a href="#bronze-modal">View Benefits</a>
+          </div>
+          <div class="card" id="silver-card">
+            <h3>Silver Membership</h3>
+            <a href="#silver-modal">View Benefits</a>
+          </div>
+          <div class="card" id="gold-card">
+            <h3>Gold Membership</h3>
+            <a href="#gold-modal">View Benefits</a>
+          </div>
+        </section>
+    
+        <!-- Modals -->
+        <dialog id="np-modal">
+          <h3>NP Membership Benefits</h3>
+          <p>Perfect for non-profits. Includes directory listing and newsletter mentions.</p>
+          <button onclick="document.getElementById('np-modal').close()">Close</button>
+        </dialog>
+    
+        <dialog id="bronze-modal">
+          <h3>Bronze Membership Benefits</h3>
+          <p>Includes networking invites and a featured post per year.</p>
+          <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+        </dialog>
+    
+        <dialog id="silver-modal">
+          <h3>Silver Membership Benefits</h3>
+          <p>Includes Bronze perks + free workshops, and spotlight advertising.</p>
+          <button onclick="document.getElementById('silver-modal').close()">Close</button>
+        </dialog>
+    
+        <dialog id="gold-modal">
+          <h3>Gold Membership Benefits</h3>
+          <p>All Silver perks + event sponsorships and priority exposure.</p>
+          <button onclick="document.getElementById('gold-modal').close()">Close</button>
+        </dialog>
+      </main>
+    
+
+    <footer>
+        <p>&copy; <span id="year"></span> Maria Jose Arevalo N. | WDD 231</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+        document.getElementById("timestamp").value = new Date().toISOString();
+    
+        // Modal links
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = link.getAttribute('href').substring(1);
+            const modal = document.getElementById(id);
+            if (modal) modal.showModal();
+          });
+        });
+      </script>
+
+</body>
+</html>

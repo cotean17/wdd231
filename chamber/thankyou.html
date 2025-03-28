@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Timbuktu Chamber of Commerce</title>
+  <meta name="description" content="Thank you for submitting your membership application to the Timbuktu Chamber of Commerce.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Syracuse Chamber of Commerce Directory</h1>
+    <nav>
+      <ul>
+        <li><a href="https://cotean17.github.io/wdd231/chamber/chamber.html">Home</a></li>
+                <li><a href="https://cotean17.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                <li><a href="https://cotean17.github.io/wdd231/chamber/directory.html" class="active">Directory</a></li>
+                <li><a href="https://cotean17.github.io/wdd231/chamber/join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="thank-you">
+      <h2>Thank You!</h2>
+      <p>Your membership application has been received. Below is the information you submitted:</p>
+
+      <ul id="form-data">
+        <!-- javas will insert form data here -->
+      </ul>
+
+      <a href="https://cotean17.github.io/wdd231/chamber/chamber.html">Return to Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Maria Jose Arevalo N. | WDD 231</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+
+    // Display query params
+    const params = new URLSearchParams(window.location.search);
+    const display = document.getElementById("form-data");
+    const requiredFields = ["fname", "lname", "email", "phone", "orgname", "timestamp"];
+
+    requiredFields.forEach(field => {
+      const value = params.get(field);
+      if (value) {
+        const item = document.createElement("li");
+        const label = field.charAt(0).toUpperCase() + field.slice(1);
+        item.textContent = `${label}: ${value}`;
+        display.appendChild(item);
+      }
+    });
+  </script>
+</body>
+</html>
