@@ -11,20 +11,67 @@ header {
     padding: 1em;
 }
 
+/* Default nav styles */
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
+    margin: 0;
+  }
+  
+  nav ul li a {
     text-decoration: none;
     color: white;
-}
+    font-weight: bold;
+  }
+  
+  /* Wayfinding: highlight active page */
+  nav ul li a.active {
+    text-decoration: underline;
+    color: yellow;
+  }
+  
+  /* Responsive nav */
+  #menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Mobile layout */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      background-color: #00447C;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    #menu-toggle {
+      display: block;
+    }
+  
+    nav ul.hidden {
+      display: none;
+    }
+  
+    nav ul:not(.hidden) {
+      display: flex;
+    }
+  }
+  
 
 main {
     padding: 20px;

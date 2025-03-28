@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // 🔹 All element selectors
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
     const membersContainer = document.getElementById("members-container");
+    const gridViewButton = document.getElementById("gridView");
+    const listViewButton = document.getElementById("listView");
 
+    // 🔹 Mobile menu toggle
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+        });
+    }
+
+    // 🔹 Async fetch members
     async function fetchMembers() {
         try {
             const response = await fetch("data/members.json");
@@ -14,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function displayMembers(members) {
         membersContainer.innerHTML = "";
         members.forEach(member => {
-            let memberCard = document.createElement("div");
+            const memberCard = document.createElement("div");
             memberCard.classList.add("member-card");
 
             memberCard.innerHTML = `
@@ -29,10 +42,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    fetchMembers();
+    // 🔹 View toggle buttons
+    if (gridViewButton && listViewButton) {
+        gridViewButton.addEventListener("click", () => {
+            membersContainer.classList.add("grid");
+            membersContainer.classList.remove("list");
+        });
 
-    // Display Current Year
+        listViewButton.addEventListener("click", () => {
+            membersContainer.classList.add("list");
+            membersContainer.classList.remove("grid");
+        });
+    }
+
+    // 🔹 Footer year & last modified
     document.getElementById("year").textContent = new Date().getFullYear();
-    // Last Modified Date
     document.getElementById("lastModified").textContent = document.lastModified;
+
+    // 🔹 Fetch members on load
+    fetchMembers();
 });

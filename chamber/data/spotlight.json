@@ -1,0 +1,19 @@
+[
+    {
+      "name": "ABC Corp",
+      "logo": "images/abc-logo.png",
+      "phone": "555-1234",
+      "address": "123 Main St",
+      "website": "https://abc.com",
+      "membership": "Gold"
+    },
+    {
+      "name": "XYZ Inc",
+      "logo": "images/xyz-logo.png",
+      "phone": "555-9876",
+      "address": "456 Elm St",
+      "website": "https://xyz.com",
+      "membership": "Silver"
+    }
+  ]
+  
