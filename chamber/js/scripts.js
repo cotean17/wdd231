@@ -19,7 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const response = await fetch("data/members.json");
             const members = await response.json();
-            displayMembers(members);
+            
+            if (membersContainer) {
+                displayMembers(members);
+              }
+              
         } catch (error) {
             console.error("Error loading members:", error);
         }
