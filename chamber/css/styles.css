@@ -11,7 +11,7 @@ header {
     padding: 1em;
 }
 /* Hero section */
-.hero {
+/* .hero {
     position: relative;
     text-align: center;
   }
@@ -32,7 +32,7 @@ header {
     background: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-radius: 0.5rem;
-  }
+  }*/
   
   .cta-button {
     background-color: #ffcc00;
@@ -44,11 +44,11 @@ header {
   }
   
   /* Spotlight section */
-  .spotlights {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+  /*.spotlights {*/
+  /*  display: grid;*/
+  /*  gap: 1rem;*/
+  /*  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+  /*}*/
   
   .spotlight-card {
     border: 1px solid #ccc;
@@ -183,4 +183,88 @@ footer {
     text-align: center;
     padding: 1em;
     margin-top: 20px;
+}
+/* Mobile fix for hero text */
+@media (max-width: 600px) {
+  .hero-text {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  height: 300px; /* adjust as needed */
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 90%;
+  text-wrap: balance; /* optional for even spacing */
+}
+
+/* === Fix for spotlights === */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#spotlight-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.spotlight-card {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.spotlight-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.spotlight-card h3 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  word-wrap: break-word;
+}
+
+.spotlight-card p,
+.spotlight-card a {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  word-wrap: break-word;
 }

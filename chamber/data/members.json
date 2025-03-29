@@ -4,57 +4,56 @@
         "address": "123 Main St, Timbuktu",
         "phone": "123-456-7890",
         "website": "https://timbuktucoffee.com",
-        "image": "images/coffee.jpg",
-        "membership": 3
+        "logo": "images/coffee.jpg",
+        "membership": "Gold"
     },
     {
         "name": "Smith's Bookstore",
         "address": "456 Elm St, Timbuktu",
         "phone": "987-654-3210",
         "website": "https://smithsbooks.com",
-        "image": "images/bookstore.jpg",
-        "membership": 2
+        "logo": "images/bookstore.jpg",
+        "membership": "Silver"
     },
     {
         "name": "Ocean Breeze Spa",
         "address": "789 Seaside Rd, Timbuktu",
         "phone": "555-666-7777",
         "website": "https://oceanbreezespa.com",
-        "image": "images/spa.jpg",
-        "membership": 1
+        "logo": "images/spa.jpg",
+        "membership": "Bronze"
     },
     {
         "name": "Baker's Delight",
         "address": "456 Pastry St, Timbuktu",
         "phone": "555-777-8888",
         "website": "https://bakersdelight.com",
-        "image": "images/bakery.jpg",
-        "membership": 2
+        "logo": "images/bakery.jpg",
+        "membership": "Silver"
     },
     {
         "name": "Speedy Auto Repair",
         "address": "369 Garage Ave, Timbuktu",
         "phone": "555-888-9999",
         "website": "https://speedyautorepair.com",
-        "image": "images/auto_repair.jpg",
-        "membership": 1
+        "logo": "images/auto_repair.jpg",
+        "membership": "Bronze"
     },
     {
         "name": "Golden Dragon Restaurant",
         "address": "258 Foodie St, Timbuktu",
         "phone": "555-111-2222",
         "website": "https://goldendragonrestaurant.com",
-        "image": "images/restaurant.jpg",
-        "membership": 3
+        "logo": "images/restaurant.jpg",
+        "membership": "Gold"
     },
     {
         "name": "The Cozy Inn",
         "address": "555 Cozy Ln, Timbuktu",
         "phone": "555-444-5555",
         "website": "https://cozyinn.com",
-        "image": "images/hotel.jpg",
-        "membership": 3
+        "logo": "images/hotel.jpg",
+        "membership": "Gold"
     }
-    
 ]
 

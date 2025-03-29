@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     // 🔹 All element selectors
     const menuToggle = document.getElementById("menu-toggle");
@@ -62,5 +63,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // 🔹 Fetch members on load
     fetchMembers();
 });
-
+// scripts.js
 

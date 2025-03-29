@@ -1,4 +1,4 @@
-fetch("data/members.json")
+fetch("/chamber/data/members.json")
   .then(response => response.json())
   .then(data => {
     const goldSilver = data.filter(m => m.membership === "Gold" || m.membership === "Silver");
