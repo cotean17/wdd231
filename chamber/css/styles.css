@@ -80,44 +80,42 @@ nav ul {
     color: yellow;
   }
   
-  /* Responsive nav */
+ /* === Default/Desktop view === */
+#menu-toggle {
+  display: none; /* hide by default */
+  background: none;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+/* === Mobile view (≤768px) === */
+@media (max-width: 768px) {
   #menu-toggle {
+    display: block; /* show only on mobile */
+  }
+
+  nav ul {
+    flex-direction: column;
+    background-color: #00447C;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  nav ul.hidden {
     display: none;
-    background: none;
-    color: white;
-    font-size: 2rem;
-    border: none;
-    cursor: pointer;
-    margin: 1rem;
   }
-  
-  .hidden {
-    display: none;
+
+  nav ul:not(.hidden) {
+    display: flex;
   }
-  
-  /* Mobile layout */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      background-color: #00447C;
-      position: absolute;
-      top: 60px;
-      width: 100%;
-      text-align: center;
-    }
-  
-    #menu-toggle {
-      display: block;
-    }
-  
-    nav ul.hidden {
-      display: none;
-    }
-  
-    nav ul:not(.hidden) {
-      display: flex;
-    }
-  }
+}
+
   
 
 main {
