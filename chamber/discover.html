@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Syracuse, Utah through the Chamber of Commerce. Learn about local parks, museums, and landmarks." />
+  <meta name="author" content="Maria Jose Arevalo N." />
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="Syracuse Chamber of Commerce | Discover" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/syracuse-ut.jpg" />
+  <meta property="og:url" content="https://cotean17.github.io/wdd231/chamber/discover.html" />
+
+  <title>Syracuse Chamber of Commerce | Discover</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/larger.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      <ul id="nav-menu" class="hidden">
+        <li><a href="https://cotean17.github.io/wdd231/index.html">Home</a></li>
+        <li><a href="https://cotean17.github.io/wdd231/chamber/discover.html" class="active">Discover</a></li>
+        <li><a href="https://cotean17.github.io/wdd231/chamber/directory.html">Directory</a></li>
+        <li><a href="https://cotean17.github.io/wdd231/chamber/join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container discover-page">
+    <section class="discover-intro">
+      <h2>Discover Syracuse</h2>
+      <p>Explore places to visit, family-friendly spots, and local highlights in Syracuse, Utah.</p>
+    </section>
+
+    <!-- Visit Message -->
+    <aside class="visit-message">
+      <p id="visit-msg">Loading...</p>
+    </aside>
+
+    <!-- Discover Grid -->
+    <section class="grid-container">
+      <!-- JS will load 8 cards here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Maria Jose Arevalo N. | WDD 231</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/discover.js"></script>
+</body>
+</html>

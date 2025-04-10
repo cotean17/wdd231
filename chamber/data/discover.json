@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Antelope Island State Park",
+      "address": "4528 W 1700 S, Syracuse, UT",
+      "description": "Explore wildlife, beaches, and hiking trails with great views of the Great Salt Lake.",
+      "image": "images/antelope.webp"
+    },
+    {
+      "name": "Syracuse Museum",
+      "address": "1891 W 1700 S, Syracuse, UT",
+      "description": "Local history museum with pioneer artifacts and community exhibits.",
+      "image": "images/museum.webp"
+    },
+    {
+        "name": "Jensen Nature Park",
+        "address": "3176 Bluff Rd, Syracuse, UT",
+        "description": "Enjoy walking trails, a pond, and beautiful wildlife in this family-friendly park.",
+        "image": "images/jensen.webp"
+      },
+      {
+        "name": "Great Salt Lake Shorelands Preserve",
+        "address": "1002 S 3200 W, Syracuse, UT",
+        "description": "Thousands of acres of wetlands provide a habitat for numerous migratory birds..",
+        "image": "images/greatsaltlake.webp"
+      },
+      {
+        "name": "Erie Canal Museum",
+        "address": "2300 Bluff Rd, Syracuse, UT",
+        "description": "Perfect for sports and outdoor play, with open spaces and picnic areas.",
+        "image": "images/erie.webp"
+      },
+      {
+        "name": "The Rush Funplex",
+        "address": "1806 S 2000 W, Magna, UT 84044",
+        "description": "Indoor amusement center with go karts, bowling, rock climbing, laser tag, skating, mini golf, and a foam pit.",
+        "image": "images/rush.webp"
+      },
+      {
+        "name": "Glen Eagle Golf Course",
+        "address": "3176 W 1700 S, Syracuse, UT",
+        "description": "Well-maintained links golf course featuring an island green on the 18th hole, and mountain views.",
+        "image": "images/golfcourse.webp"
+      },
+      {
+        "name": "Legacy Park",
+        "address": "2356 S 1000 W, Syracuse, UT",
+        "description": "Park with a gazebo, picnic areas, and a pond, plus a playground.",
+        "image": "images/legacypark.webp"
+      }
+  ]
+  
