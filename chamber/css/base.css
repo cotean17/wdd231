@@ -32,24 +32,52 @@ body {
       "card6"
       "card7"
       "card8";
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* auto layout */
+    justify-items: center;
   }
   
   .card {
     border: 1px solid #ddd;
     padding: 1rem;
     background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
   }
   
+  .card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
   .card img {
     width: 100%;
+    max-width: 300px;  /* 🔥 controls how wide the image can be */
     height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
   }
   
   aside {
     background-color: #f4f4f4;
     padding: 1rem;
     margin: 1rem;
+  }
+  .card address {
+    font-style: normal;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
+  .card button {
+    background-color: #00447C;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .card button:hover {
+    background-color: #0061b0;
   }
   

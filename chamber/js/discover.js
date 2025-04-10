@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const container = document.querySelector(".grid-container");
 
-  fetch("../../data/discover.json") // <-- Final correct path
+  fetch("data/discover.json") // <-- Final correct path
     .then(response => {
       if (!response.ok) {
         throw new Error("Failed to fetch JSON");
