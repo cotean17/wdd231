@@ -1,64 +1,64 @@
 [
     {
-      "title": "Golden Hour Couple",
+      "title": "Family in the fields",
       "location": "Antelope Island",
-      "category": "Couples",
+      "category": "Family",
       "date": "2025-02-20",
       "image": "sample1.jpg"
     },
     {
-      "title": "Family in the Fields",
+      "title": "Engagement",
       "location": "Syracuse, Utah",
-      "category": "Family",
+      "category": "Couple",
       "date": "2025-02-15",
       "image": "sample2.jpg"
     },
     {
-      "title": "Birthday Smash",
+      "title": "Downtown Portrait",
       "location": "Client's Backyard",
-      "category": "Baby",
+      "category": "Portraits",
       "date": "2025-02-12",
       "image": "sample3.jpg"
     },
     {
-      "title": "Downtown Engagement",
-      "location": "Salt Lake City",
+      "title": "Cozy Couple in Fall ",
+      "location": "Snowbasin",
       "category": "Couples",
       "date": "2025-01-28",
       "image": "sample4.jpg"
     },
     {
-      "title": "Mom & Me Session",
-      "location": "West Point Park",
-      "category": "Family",
+      "title": "Engagement Session",
+      "location": "Bryce Canyon",
+      "category": "Couple",
       "date": "2025-01-18",
       "image": "sample5.jpg"
     },
     {
-      "title": "Sister Portraits",
-      "location": "Farmington Trails",
-      "category": "Portraits",
+      "title": "Couple Urban",
+      "location": "Salt Lake City",
+      "category": "Couples",
       "date": "2025-01-05",
       "image": "sample6.jpg"
     },
     {
-      "title": "Cake Smash Fun",
-      "location": "Studio Setup",
-      "category": "Baby",
+      "title": "Mom & Me",
+      "location": "West Point Park",
+      "category": "Mom and Me",
       "date": "2024-12-15",
       "image": "sample7.jpg"
     },
     {
-      "title": "Sunset Family Session",
+      "title": "Mom & Me",
       "location": "Layton Creek",
-      "category": "Family",
+      "category": "Mom & Me",
       "date": "2024-12-01",
       "image": "sample8.jpg"
     },
     {
-      "title": "Snowy Engagement",
+      "title": "Portrait",
       "location": "Ogden Canyon",
-      "category": "Couples",
+      "category": "Portraits",
       "date": "2024-11-20",
       "image": "sample9.jpg"
     },
@@ -70,36 +70,36 @@
       "image": "sample10.jpg"
     },
     {
-      "title": "Fall Family Gathering",
-      "location": "Syracuse Park",
-      "category": "Family",
+      "title": "Downtown Quinceanera",
+      "location": "Salt Lake City",
+      "category": "Portraits",
       "date": "2024-10-15",
       "image": "sample11.jpg"
     },
     {
-      "title": "Downtown Quince",
-      "location": "Salt Lake City",
-      "category": "Quinceañera",
+      "title": "Engagement Session",
+      "location": "Salt Flats",
+      "category": "Couples",
       "date": "2024-10-01",
       "image": "sample12.jpg"
     },
     {
-      "title": "Nature Vibes",
-      "location": "Adams Canyon",
+      "title": "Nature Vibes Quinceanera",
+      "location": "Liberty Park",
       "category": "Portraits",
       "date": "2024-09-18",
       "image": "sample13.jpg"
     },
     {
-      "title": "Classic Black & White",
-      "location": "Studio",
+      "title": "Outdoor Portrait",
+      "location": "Antilope Island",
       "category": "Portraits",
       "date": "2024-09-01",
       "image": "sample14.jpg"
     },
     {
       "title": "Family Adventure",
-      "location": "Bonneville Shoreline Trail",
+      "location": "Murray Park",
       "category": "Family",
       "date": "2024-08-15",
       "image": "sample15.jpg"
