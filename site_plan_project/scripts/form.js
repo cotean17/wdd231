@@ -23,6 +23,6 @@ closeModal.addEventListener('click', () => {
 });
 
 document.getElementById("closeModal").addEventListener("click", () => {
-  window.location.href = "index.html"; // or full URL: "https://cotean17.github.io/wdd231/site_plan_project/index.html"
+  window.location.href = "https://cotean17.github.io/wdd231/site_plan_project/index.html";
 });
 
