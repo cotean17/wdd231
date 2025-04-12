@@ -19,5 +19,10 @@ form.addEventListener('submit', (e) => {
 
 closeModal.addEventListener('click', () => {
   modal.classList.add('hidden');
-  window.location.href = 'thankyou.html';
+  window.location.href = 'form-confirmation.html';
 });
+
+document.getElementById("closeModal").addEventListener("click", () => {
+  window.location.href = "index.html"; // or full URL: "https://cotean17.github.io/wdd231/site_plan_project/index.html"
+});
+
