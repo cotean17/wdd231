@@ -1,0 +1,108 @@
+[
+    {
+      "title": "Golden Hour Couple",
+      "location": "Antelope Island",
+      "category": "Couples",
+      "date": "2025-02-20",
+      "image": "sample1.jpg"
+    },
+    {
+      "title": "Family in the Fields",
+      "location": "Syracuse, Utah",
+      "category": "Family",
+      "date": "2025-02-15",
+      "image": "sample2.jpg"
+    },
+    {
+      "title": "Birthday Smash",
+      "location": "Client's Backyard",
+      "category": "Baby",
+      "date": "2025-02-12",
+      "image": "sample3.jpg"
+    },
+    {
+      "title": "Downtown Engagement",
+      "location": "Salt Lake City",
+      "category": "Couples",
+      "date": "2025-01-28",
+      "image": "sample4.jpg"
+    },
+    {
+      "title": "Mom & Me Session",
+      "location": "West Point Park",
+      "category": "Family",
+      "date": "2025-01-18",
+      "image": "sample5.jpg"
+    },
+    {
+      "title": "Sister Portraits",
+      "location": "Farmington Trails",
+      "category": "Portraits",
+      "date": "2025-01-05",
+      "image": "sample6.jpg"
+    },
+    {
+      "title": "Cake Smash Fun",
+      "location": "Studio Setup",
+      "category": "Baby",
+      "date": "2024-12-15",
+      "image": "sample7.jpg"
+    },
+    {
+      "title": "Sunset Family Session",
+      "location": "Layton Creek",
+      "category": "Family",
+      "date": "2024-12-01",
+      "image": "sample8.jpg"
+    },
+    {
+      "title": "Snowy Engagement",
+      "location": "Ogden Canyon",
+      "category": "Couples",
+      "date": "2024-11-20",
+      "image": "sample9.jpg"
+    },
+    {
+      "title": "Graduation Vibes",
+      "location": "Weber State",
+      "category": "Portraits",
+      "date": "2024-11-01",
+      "image": "sample10.jpg"
+    },
+    {
+      "title": "Fall Family Gathering",
+      "location": "Syracuse Park",
+      "category": "Family",
+      "date": "2024-10-15",
+      "image": "sample11.jpg"
+    },
+    {
+      "title": "Downtown Quince",
+      "location": "Salt Lake City",
+      "category": "Quinceañera",
+      "date": "2024-10-01",
+      "image": "sample12.jpg"
+    },
+    {
+      "title": "Nature Vibes",
+      "location": "Adams Canyon",
+      "category": "Portraits",
+      "date": "2024-09-18",
+      "image": "sample13.jpg"
+    },
+    {
+      "title": "Classic Black & White",
+      "location": "Studio",
+      "category": "Portraits",
+      "date": "2024-09-01",
+      "image": "sample14.jpg"
+    },
+    {
+      "title": "Family Adventure",
+      "location": "Bonneville Shoreline Trail",
+      "category": "Family",
+      "date": "2024-08-15",
+      "image": "sample15.jpg"
+    }
+  ]
+  

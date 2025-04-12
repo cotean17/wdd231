@@ -1,65 +1,82 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Plan - Maria Jose Photography</title>
-  <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maria Jose Photography</title>
+  <meta name="description" content="Portrait photographer based in Syracuse, Utah. View sessions, pricing, and book online.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+<script type="module" src="scripts/main.js"></script>
 <body>
-
-  <h1>Site Plan: Maria Jose Photography</h1>
-
-  <section>
-    <h2>Site Name</h2>
-    <p><strong>Maria Jose Photography</strong></p>
-    <p>This name reflects my identity as a portrait photographer. It’s simple, personal, and easy to remember, which helps with connection and branding.</p>
-  </section>
-
-  <section>
-    <h2>Site Purpose</h2>
-    <p>The purpose of this site is to showcase my photography work, provide information about the types of sessions I offer (portraits, family, couples, quinceañeras, etc.), list pricing, and give potential clients an easy way to learn about me and contact me.</p>
-    <p>The goal is to make it easier for people to feel confident booking a session by showing clear, friendly, and professional information.</p>
-  </section>
-
-  <section>
-    <h2>Scenarios</h2>
-    <ul>
-      <li>How much do you charge for a family or quinceañera photo session?</li>
-      <li>What kind of photos can I expect from your sessions?</li>
-      <li>Can I see testimonials from other clients?</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Color Schema</h2>
-    <div>
-      <div class="color-box" style="background-color: #5a2a83;"></div>
-      <strong>Purple (#5a2a83)</strong>: Used for headings, buttons, and accents.
+  <header>
+    <div class="nav-container">
+      <h1>Maria Jose Photography</h1>
+      <nav>
+        <button id="menuToggle">☰</button>
+        <ul id="navMenu">
+          <li><a href="https://cotean17.github.io/wdd231/site_plan_project/index.html">Home</a></li>
+          <li><a href="https://cotean17.github.io/wdd231/site_plan_project/gallery.html">Gallery</a></li>
+          <li><a href="https://cotean17.github.io/wdd231/site_plan_project/contact.html">Book a Session</a></li>
+        </ul>
+      </nav>
     </div>
-    <div>
-      <div class="color-box" style="background-color: #e8d8f0;"></div>
-      <strong>Lavender (#e8d8f0)</strong>: Used for background highlights and section areas.
-    </div>
-  </section>
-
-  <section>
-    <h2>Typography</h2>
-    <ul>
-      <li><strong>Playfair Display</strong>: Used for main headings to add elegance and personality.</li>
-      <li><strong>Arial</strong>: Used for body text and descriptions for a clean and readable look.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Wireframes</h2>
+  </header>
   
-    <h3>Mobile View</h3>
-    <img src="images/mobile_wireframe.png" alt="Mobile wireframe for photography website" style="max-width: 100%; border: 1px solid #ccc;">
-  
-    <h3>Desktop View</h3>
-    <img src="images/desktop_wireframe.png" alt="Desktop wireframe for photography website" style="max-width: 100%; border: 1px solid #ccc;">
-  </section>
 
+  <main>
+    <section class="hero">
+      <img src="images/me.jpg" alt="Pictute of Maria Jose">
+      <div class="hero-text">
+        <h2>Capturing Moments, Telling Stories</h2>
+        <p>Portraits, families, couples, and quinceañeras</p>
+        <a href="contact.html" class="btn">Book a Session</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Hey!</h2>
+      <p>I’m a Latina portrait photographer based in Syracuse, Utah. I love capturing raw, meaningful, and beautiful moments for you and your loved ones. Let’s make magic together!</p>
+    </section>
+
+    <section class="testimonials">
+        <h2>Kind Words</h2>
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <img src="images/sample1.jpg" alt="Family walking in forest" loading="lazy">
+            <p>
+              I cannot express enough how happy I was with how our photos turned out AND the whole experience of getting them done! She made us feel comfortable from the beginning. I truly felt like she was my friend rather than just my photographer!
+            </p>
+            <p class="client-name">Morgan + Brandon</p>
+          </div>
+      
+          <div class="testimonial-card">
+            <img src="images/sample2.jpg" alt="Couple engaged" loading="lazy">
+            <p>
+              Maria did an amazing job of making us feel comfortable posing. The pictures are natural and gorgeous. I love the way she captured everything throughout the night!
+            </p>
+            <p class="client-name">Kristina + Connor</p>
+          </div>
+      
+          <div class="testimonial-card">
+            <img src="images/sample3.jpg" alt="Urban portrait session" loading="lazy">
+            <p>
+              Maria is a 10/10! We are so happy with our pictures! She worked fast and made us feel so comfortable. We’d recommend her to anyone!
+            </p>
+            <p class="client-name">July</p>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maria Jose Photography</p>
+    <a href="attributions.html">Attributions</a>
+  </footer>
+
+  <script src="scripts/main.js" type="module"></script>
 </body>
 </html>

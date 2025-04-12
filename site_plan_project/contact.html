@@ -1,0 +1,70 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Session - Maria Jose Photography</title>
+  <meta name="description" content="Book a photography session with Maria Jose.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <p>Thank you! Your session request has been received.</p>
+      <button id="closeModal" class="btn">Close</button>
+    </div>
+  </div>
+  
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>Maria Jose Photography</h1>
+      <nav>
+        <button id="menuToggle">☰</button>
+        <ul id="navMenu">
+            <li><a href="https://cotean17.github.io/wdd231/site_plan_project/index.html">Home</a></li>
+            <li><a href="https://cotean17.github.io/wdd231/site_plan_project/gallery.html">Gallery</a></li>
+            <li><a href="https://cotean17.github.io/wdd231/site_plan_project/contact.html">Book a Session</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section">
+        <h2>Book a Session</h2>
+        <form id="bookingForm" class="booking-form">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required />
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+      
+          <label for="session">Session Type:</label>
+          <select id="session" name="session" required>
+            <option value="">-- Select --</option>
+            <option value="Portrait">Portrait</option>
+            <option value="Family">Family</option>
+            <option value="Couples">Couples</option>
+            <option value="Quinceañera">Quinceañera</option>
+          </select>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+      
+          <button type="submit" class="btn">Submit Request</button>
+        </form>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maria Jose Photography</p>
+    <a href="attributions.html">Attributions</a>
+  </footer>
+
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/form.js" type="module"></script>
+</body>
+</html>
